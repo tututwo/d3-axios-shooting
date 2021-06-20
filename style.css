@@ -1,0 +1,19 @@
+/* path { mix-blend-mode: screen; }
+.isolate { isolation: isolate; } */
+/* #wrapper{
+    position: relative;
+    width: 60vw;
+    height: 80vh
+}
+
+#wrapper svg {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+} */
+
+#wrapper{
+    place-items: center
+}

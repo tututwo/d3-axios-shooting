@@ -1,0 +1,23 @@
+---
+title: "shootings"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data <- 
+  shooting %>% 
+  filter(year > 1998 & type == "Mass") %>% 
+  select(year, date, fatalities, case, location) %>% 
+  mutate(map_date = str_replace(date, '^[0-9]{4}', '2000'))
+```
+
